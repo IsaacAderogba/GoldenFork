@@ -1,0 +1,50 @@
+// General Styles
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+* {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    font-size: @defaultFontSize;
+  
+    @media @desktop {
+      font-size: @defaultFontSize;
+    }
+  }
+  
+  html, body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: @secondary-font-color;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: 'Source Serif Pro', serif;
+    line-height: 1.4;
+    color: @primary-font-color;
+  }
+  
+  h1 {
+    font-size: 3.8rem;
+  }
+  
+  h2 {
+    font-size: 3.2rem;
+  }
+  
+  h3 {
+    font-size: 2.8rem;
+  }
+  
+  p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+  
+  a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: @secondary-font-color;
+  }
+

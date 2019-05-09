@@ -1,3 +1,293 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Serif Pro'), local('SourceSerifPro-Regular'), url(https://fonts.gstatic.com/s/sourceserifpro/v6/neIQzD-0qpwxpaWvjeD0X88SAOeauXQ-pQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v12/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+:root {
+  font-size: 67.5%;
+}
+@media (min-width: 800px) {
+  :root {
+    font-size: 67.5%;
+  }
+}
+html,
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: grey;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Source Serif Pro', serif;
+  line-height: 1.4;
+  color: #333333;
+}
 h1 {
-  color: red;
+  font-size: 3.8rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: grey;
+}
+.nav-wrapper {
+  width: 100%;
+  border: 1px solid blue;
+}
+.navigation {
+  border: 1px solid red;
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation .logo {
+  display: none;
+}
+@media (min-width: 800px) {
+  .navigation .logo {
+    display: inline;
+  }
+  .navigation .logo img {
+    height: 40px;
+  }
+}
+.navigation .mobile-logo {
+  width: 40px;
+  height: 40px;
+}
+.navigation .mobile-logo img {
+  width: 100%;
+}
+@media (min-width: 800px) {
+  .navigation .mobile-logo {
+    display: none;
+  }
+}
+.navigation .links {
+  display: flex;
+}
+.navigation .links .nav-links {
+  display: none;
+}
+@media (min-width: 800px) {
+  .navigation .links .nav-links {
+    display: block;
+  }
+}
+.navigation .links .nav-buttons a {
+  color: #ffffff;
+  padding: 0.4rem 1.2rem;
+  border-radius: 0.4rem;
+}
+.navigation .links .nav-buttons .login {
+  background-color: #324c5b;
+}
+.navigation .links .nav-buttons .signup {
+  background-color: #007eff;
+}
+.navigation .links ul li {
+  display: inline-block;
+  margin: 1.2rem 0.8rem;
+}
+.header-wrapper {
+  width: 100%;
+  border: 1px solid orange;
+  background-color: #1c2026;
+}
+.header-wrapper header {
+  margin: 9.6rem auto;
+  padding: 0 5%;
+  max-width: 1400px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 800px) {
+  .header-wrapper header {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.header-wrapper header .left-hero h1 {
+  color: white;
+}
+.header-wrapper header .left-hero p {
+  color: grey;
+}
+.header-wrapper header .left-hero button {
+  background-color: #ab9770;
+  padding: 1.2rem 6.4rem;
+  margin: 3.2rem 0;
+  border-radius: 0.4rem;
+  border-color: #ab9770;
+}
+.header-wrapper header .left-hero button a {
+  color: #ffffff;
+}
+@media (min-width: 800px) {
+  .header-wrapper header .left-hero {
+    text-align: left;
+    width: 42%;
+  }
+}
+@media (min-width: 800px) {
+  .header-wrapper header .right-hero {
+    margin-left: 4%;
+    width: 42%;
+  }
 }
