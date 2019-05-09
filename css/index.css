@@ -172,6 +172,17 @@ h2 {
 h3 {
   font-size: 2.8rem;
 }
+h4 {
+  font-size: 2.4rem;
+}
+h5 {
+  font-size: 1.8rem;
+}
+h6 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+}
 p {
   font-size: 1.6rem;
   line-height: 1.4;
@@ -250,6 +261,7 @@ a {
 .header-wrapper header {
   margin: 9.6rem auto;
   padding: 0 5%;
+  overflow: hidden;
   max-width: 1400px;
   border: 1px solid red;
   display: flex;
@@ -289,5 +301,80 @@ a {
   .header-wrapper header .right-hero {
     margin-left: 4%;
     width: 42%;
+  }
+}
+.main-wrapper {
+  border: 1px solid orange;
+  width: 100%;
+  margin: 0 auto;
+  background-image: linear-gradient(white, #f2f2f2);
+}
+.main-wrapper main {
+  overflow: hidden;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  margin: 6.4rem auto;
+  padding: 0 5%;
+  max-width: 1400px;
+}
+.main-wrapper main .learn,
+.main-wrapper main .join {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.main-wrapper main .learn .sub-heading,
+.main-wrapper main .join .sub-heading {
+  margin-top: 3.2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid blue;
+}
+.main-wrapper main .learn .sub-heading hr,
+.main-wrapper main .join .sub-heading hr {
+  width: 4rem;
+  margin: 0 0.8rem 0 0;
+  background-color: grey;
+}
+.main-wrapper main .learn .sub-heading h6,
+.main-wrapper main .join .sub-heading h6 {
+  text-transform: uppercase;
+  color: #ab9770;
+}
+.main-wrapper main .learn h3,
+.main-wrapper main .join h3,
+.main-wrapper main .learn p,
+.main-wrapper main .join p {
+  margin: 3.2rem 0;
+}
+@media (min-width: 800px) {
+  .main-wrapper main .learn,
+  .main-wrapper main .join {
+    align-items: center;
+    text-align: left;
+  }
+}
+@media (min-width: 800px) {
+  .main-wrapper main .learn {
+    flex-direction: row;
+  }
+}
+@media (min-width: 800px) {
+  .main-wrapper main .join {
+    flex-direction: row-reverse;
+  }
+}
+.main-wrapper main .main-image {
+  width: 100%;
+}
+.main-wrapper main .main-image img {
+  width: 100%;
+}
+@media (min-width: 800px) {
+  .main-wrapper main .main-image {
+    width: 90%;
+    margin: 0 2.4rem;
   }
 }
